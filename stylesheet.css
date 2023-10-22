@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Osmanya&family=Playpen+Sans:wght@100;300;500;600;700;800&family=Poppins:ital,wght@0,300;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/* font-family: 'Noto Sans Osmanya', sans-serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Poppins', sans-serif; */
+
+/* basic uses */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+}
+body{
+    background-color: var(--background-color) ;
+    height: 100vh;
+    width: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color:rgb(235, 224, 227);
+    --background-section1:rgb(234, 214, 238);
+    --background-section2:rgb(253, 231, 247);
+    --background-section3:rgb(89, 205, 160);
+    --background-footersection:rgb(23, 31, 50);
+    --buttons-color : rgb(236, 167, 44);
+    --text-color : rgb(0, 0, 0);
+    --header-color : rgb(2, 57, 62);
+    --shadow-color: rgba(88, 88, 88, 0.937);
+    --span-color: rgb(52, 209, 191);
+    --hover-color: rgb(236, 167, 44);
+}
+/* mean functions */
+
+h1{
+    font-size: clamp(5em, 4em + 2em, 10em);
+    font-weight: 900;
+    color: var(--header-color);
+    font-family: 'Playpen Sans', cursive;
+
+}
+button{
+    font-size: 18px;
+    font-family: ;
+    border: 1px solid var(--buttons-color);
+    background-color: transparent;
+    border-radius: 3px;
+    padding: .3em 1em;
+    color: var(--text-color);
+    transition: .6s ease-in;
+}
+button:hover{
+    background-color: var(--buttons-color);
+}
+
+/* header section */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    z-index: 2;
+    position: relative;
+}
+header .logo a{
+    font-weight: 800;
+    font-family: 'Noto Sans Osmanya', sans-serif;
+    font-size: 30px;
+    position: relative;
+}
+header .logo a::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 50% 10%;
+    background: linear-gradient(var(--buttons-color), var(--buttons-color));
+    backdrop-filter: blur(2px);
+    border: none;
+    z-index: -1;
+    transform: rotate(0deg);
+}
+
+header .nav-btn ul{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .nav-btn ul li{
+    padding: .5em 2em;
+    font-size: 18px;
+    font-weight: 400;
+}
+header .nav-btn ul li:hover {
+    border-bottom: 1px solid var(--hover-color);
+    transition: .5s ease-in;
+}
+header .nav-btn ul li:hover a{
+    transition: .6s ease-in;
+    color: var(--hover-color);
+}
+
+/* home section */
+ section{
+    height: 100%;
+    width: auto;
+    padding: 0 1em;
+ }
+.home-section{
+    width: auto;
+    height: 85%;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--background-section1);
+}
+.home-section .home-text{
+    max-width: 60%;
+    margin: 0 auto;
+ 
+}.material-icons{
+    color: var(--header-color);
+    font-weight: 50;
+    font-size: 13px;
+}
+.home-section .home-text h1{
+    font-size: 6em;
+    margin: auto;
+    width: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.home-section .home-text h1 span{
+    letter-spacing: 30px;
+    font-weight: 100;
+    font-size: 50px;
+    color: var(--buttons-color);
+}
+.home-section .home-text p{
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    word-spacing: 5x;
+    word-break: inherit;
+    text-align: start;
+}
+.info{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+    padding-top: 3rem;
+}
+.info h3{
+    font-size: 12px;
+    color: var(--background-footersection);
+}
+.info p{
+    color: var(--buttons-color);
+}
+.home-section .image{
+    width: auto;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 20px 100px var(--background-footersection);
+    border-radius: 5%;
+}
+.home-section img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  
+}
+.home-section  .text-in-image{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    top: 85%;
+    width: auto;
+    height: 20%;
+    transition: 1s ease-in;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px);
+    padding:0em  4em;
+    cursor: pointer;
+
+}
+h2, p{
+    font-weight: 500;
+    color: var(--background-footersection);
+    text-transform: capitalize;
+    text-align: start;
+}
+.home-section  .text-in-image h2{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+ #about {
+    background-color: var(--background-section2);
+    height: auto;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    width: auto;
+    padding: 4rem;
+ }
+#about .section-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    max-height: 20%;
+}
+#about .section-info .descreption{
+    display: block;
+    justify-items: center;
+    text-align: start;
+    text-justify: start;
+    max-width: 50%;
+}
+#about .section-info img{
+    max-width: 20%;
+    max-height: 40%;
+    margin: 0 5rem;
+    box-shadow: 0px 5px  10px var(--background-footersection);
+    border-radius: 10%;
+
+}
+#about .section-info h4
+{
+    font-size: 18px;
+    word-spacing: .5em;
+    font-weight: 600;
+    padding: 2em  0;
+    text-transform: uppercase;
+}
+.gallary {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.gallary .box{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.gallary .box .colume{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.gallary .box .colume img{
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+
