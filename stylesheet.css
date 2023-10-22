@@ -29,7 +29,7 @@ html{
     --background-color:rgb(235, 224, 227);
     --background-section1:rgb(234, 214, 238);
     --background-section2:rgb(253, 231, 247);
-    --background-section3:rgb(89, 205, 160);
+    --background-section3:rgb(166, 226, 203);
     --background-footersection:rgb(23, 31, 50);
     --buttons-color : rgb(236, 167, 44);
     --text-color : rgb(0, 0, 0);
@@ -49,7 +49,6 @@ h1{
 }
 button{
     font-size: 18px;
-    font-family: ;
     border: 1px solid var(--buttons-color);
     background-color: transparent;
     border-radius: 3px;
@@ -257,6 +256,7 @@ h2, p{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    top: 0;
 }
 .gallary .box{
     display: flex;
@@ -273,6 +273,83 @@ h2, p{
     width: 90%;
     height: auto;
     margin: 2rem auto;
+}
+
+#products{
+    background-color: var(--background-section3);
+    padding:2rem 5rem;
+    height: auto;
+}
+#products li{
+    padding: 3px 10px ;
+}
+#products li b{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#contact{
+    width: auto;
+    height: 100%;
+    padding: 4rem 1rem ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    
+
+}
+#contact form{
+    width: 40%;
+    height: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.205));
+    position: relative;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px var(--background-footersection);
+    border-style: hidden;
+}
+#contact form label{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    display: block;
+    font-weight: 600;
+    color: var(--text-color);
+}
+#contact form input{
+    background-color: transparent;
+    border-radius: 30px;
+    padding-left:2rem  ;
+    font-size: 21px;
+    color: var(--text-color);
+    padding: 1rem 2rem ;
+    width: 70%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 1px solid var(--span-color);
+}
+#contact form label span{
+    color: var(--buttons-color);
+    padding: 1rem;
+    font-size: 30px;
+}
+#contact .icon{
+    font-size: 150px;
+    border-radius: 50%;
+    font-weight: 900;
+}
+ input::-webkit-input-placeholder{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 1rem 2rem;
+
 }
 
 
